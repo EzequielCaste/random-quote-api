@@ -9,4 +9,4 @@ app.get("/", (req, res) => {
 	.then(result => res.send(result))
 })
 
-app.listen(3000, console.log("ok"))
+app.listen(process.env.PORT || 3000, console.log("ok"))
