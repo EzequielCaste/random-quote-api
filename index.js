@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 
 	fetch(url)
 		.then(data => data.json())
-		.then(result => res.status(200).send(result))
+		.then(result => res.status(200).send(result.json()))
 
 	
 })
